@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="utf-8">
+  <title>Stats</title>
+  <link rel="stylesheet" type="text/css" href="styles/report.css">
+</head>
+<body>
+  <img id="flag" src="static/ucsd.png" alt="No image">
+  <details id ="bdy1">
+    <summary>Index Page</summary><br>
+  </details>
+  <details id ="bdy2">
+    <summary>Images Page</summary><br>
+  </details>
+  <details id ="bdy3">
+    <summary>Form Page</summary><br>
+  </details>
+  <details id ="bdy4">
+    <summary>Table Page</summary><br>
+  </details>
+  <template id="entry_data">
+  <div id="page_name">
+  <h1> Static Properties </h1>
+  <table class="GeneratedTable" style="border:1px solid black;margin-left:auto;margin-right:auto;">
+    <thead>
+      <tr>
+        <th>Property</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>userAgent</td>
+        <td id='UserAgent'>
+        </td>
+      </tr>
+      <tr>
+        <td>Language</td>
+        <td id="lang"></td>
+      </tr>
+      <tr>
+        <td>CookiesEnabled</td>
+        <td id="ck"></td>
+      </tr>
+      <tr>
+        <td>CSS Enabled</td>
+        <td id="cs"></td>
+      </tr>
+      <tr>
+        <td>Images Enabled</td>
+        <td id="im"></td>
+      </tr>
+      <tr>
+        <td>Screen Dimensions</td>
+        <td id="screen"></td>
+      </tr>
+      <tr>
+        <td>Window Dimensions</td>
+        <td id="wind"></td>
+      </tr>
+      <tr>
+        <td>Connection Type</td>
+        <td id="conn"></td>
+      </tr>
+    </tbody>
+  </table>
+<h1> Performance Properties</h1>
+  <table class="GeneratedTable" style="border:1px solid black;margin-left:auto;margin-right:auto;">
+    <thead>
+      <tr>
+        <th>Property</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>DOM Content Load Start</td>
+        <td id='doms'>
+        </td>
+      </tr>
+      <tr>
+        <td>load Event End</td>
+        <td id="lee"></td>
+      </tr>
+      <tr>
+        <td>Total time</td>
+        <td id="tt"></td>
+      </tr>
+    </tbody>
+  </table>
+  <button id="purge">Purge Button</button>
+  <div id = "scr" style="width:100%; height:200px; overflow: auto;" >
+    <h3> CLICK EVENT</h3>
+    <dialog id="myFirstDialog1" style="width:100%;background-color:#F4FFEF;border:1px dotted black;">
+    <p id="click1"></p>
+    <button id="hide1">Close</button>
+    </dialog>
+    <button id="show1">Open Mouse Event Summary</button>
+    <h3> MOUSE EVENT</h3>
+    <dialog id="myFirstDialog2" style="width:100%;background-color:#F4FFEF;border:1px dotted black;">
+    <p id="mouse1"></p>
+    <button id="hide2">Close</button>
+    </dialog>
+    <button id="show2">Open Mouse Event Summary</button>
+    <h3> KEYBOARD EVENT</h3>
+    <dialog id="myFirstDialog3" style="width:100%;background-color:#F4FFEF;border:1px dotted black;">
+    <p id="key1"></p>
+    <button id="hide3">Close</button>
+    </dialog>
+    <button id="show3">Open Mouse Event Summary</button>
+    <h3> SCROLLING</h3>
+    <dialog id="myFirstDialog4" style="width:100%;background-color:#F4FFEF;border:1px dotted black;">
+    <p id="scroll1"></p>
+    <button id="hide4">Close</button>
+    </dialog>
+    <button id="show4">Open Mouse Event Summary</button>
+  </div>
+  <br><br>
+</div>
+</template>
+<button id="purgeAll">Purge All Button</button>
+<p id ="check_css" style="display: none"> CSS WAS DISABLED</p>
+<script type="text/javascript" src="script/reporter.js">
+</script>
+<noscript>
+  <h1 align="center"> Javascript is disabled</h1>
+</noscript>
+</body>
+</html>
